@@ -2,6 +2,7 @@ package shopsber;
 
 import com.codeborne.selenide.Selenide;
 import com.github.javafaker.Faker;
+import helpers.Attach;
 import org.junit.jupiter.api.*;
 import pages.RegistrationFormPage;
 
@@ -25,6 +26,10 @@ public class RegistrationFormTest extends TestBase {
     }
     @AfterEach
     void afterEach() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
         Selenide.closeWebDriver();
     }
     @Test
