@@ -1,1 +1,1 @@
-# SberShop_registration_form
+Проект по автоматизации тестовых сценариев для сайта корпоративного магазина мерча Сбера-[SberShop](https://sbershop.ru/)
